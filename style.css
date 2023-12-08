@@ -1,0 +1,207 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Lato', sans-serif; */
+    
+/* } */ */
+
+ 
+
+body {
+
+
+    overflow-x: hidden;
+    /* height: 400vh; */
+    position: relative;
+  
+
+
+
+    
+      
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh ;
+    color: green;
+    text-transform: uppercase;
+    flex-wrap: nowrap;
+    position: sticky;
+    width: 100%;
+    transition: all 0.5s ease-in-out ;
+    background-color: white;
+    
+
+    
+}
+
+.get {
+     text-transform: uppercase;
+     width: 150px;
+     color: white;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin-left: 100px;
+       margin-right: 40px;
+     padding: 4px;
+     cursor: pointer;
+     position: relative;
+     z-index: 1;
+
+
+ }
+
+
+
+
+
+.get::after {
+    position: absolute;
+    content:'';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 250ms ease-in;
+
+}
+.get:hover::after {
+       background-color: darkgreen;
+      transform: scale(1);
+      transform:left, right  ;
+}
+
+
+
+.logo img {
+    height: 50px;
+    width: 250px;
+    image-rendering: pixelated;
+    margin-left:50px;
+}
+nav  ul {
+    
+    display: flex;
+    flex-wrap: nowrap;
+
+
+
+}
+
+ul {
+    border: none;
+}
+
+
+
+li {
+    list-style: none;
+    margin-right: 50px;
+    border: none;
+    
+}
+.link1{
+     margin-left: 240px;
+}
+
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    padding: 10px 0 0 0 ;
+    color: green;
+    font-size:18px;
+    font-weight: lighter;
+    outline: none;
+    
+    
+
+}
+
+.nhr1 {
+    
+        background-color: green;
+        height: 2px;
+        width: 100%;
+        margin: 0 20px 0 20px;
+    
+}
+.nhr2 {
+    
+    background-color: green;
+    height: 2px;
+    margin: 0 20px 0 20px;
+
+}
+
+.anime1 , .anime2 ,.anime3 , .anime4 {
+    position: relative;
+}
+
+
+.anime1::after , .anime2::after , .anime3::after ,.anime4::after {
+    position: absolute;
+    content: '';
+    width:100% ;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    transform: scale(0);
+    transition: transform 0.25s ease-in;
+    transform-origin:center ;
+
+}
+
+.anime1:hover::after , .anime2:hover::after , .anime3:hover::after ,.anime4:hover::after {
+
+
+    transform-origin: left ,right ;
+    transform: scale(1);
+} 
+
+
+.sticky .anime1:hover::after 
+ ,.sticky .anime2:hover::after 
+  ,.sticky .anime3:hover::after ,.sticky .anime4:hover::after {
+
+    
+    background-color: darkgreen;
+
+} 
+
+
+
+
+
+.sticky {
+
+     background-color:white;
+     color: green ;
+     height: 8vh;
+     box-shadow: 0 0 20px whitesmoke;
+     transition: 0.5s ease-in;
+}
+
+
+.sticky a  {
+
+    color: green;
+
+}
+
+
+.sticky .hamburger div {
+       background-color: darkgreen;
+}

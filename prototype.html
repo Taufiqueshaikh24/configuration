@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype</title>
+    <script src="https://unpkg.com/read-excel-file@4.x/bundle/read-excel-file.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  <style>
+      h1{
+            /* font-size: 25px; */
+            font-weight: lighter;
+        }
+        hr {
+       background-color: green;
+       height: 2px;
+       margin: 0 10px 0 10px;
+    }
+    .container {
+          display: grid;
+          justify-content: center;
+          align-items: center; 
+          grid-template-rows: 1fr 1fr 1fr; 
+          padding: 60px 0 60px 0 ;
+          border-radius: 10px;
+
+          box-shadow: 10px 10px 50px lightgray;
+          grid-gap: 20px;
+         margin: 20px;
+        
+        
+    }
+    .container0 {
+        
+          border-radius: 10px;
+          padding: 10px 0 10px 0 ;
+          box-shadow: 10px 10px 50px lightgray;
+          grid-gap: 20px;
+         margin: 20px;
+        
+        
+    }
+   
+    
+    button {
+        background-color: green;
+        color: white;
+        width: 97%;
+        height: 40px;
+        border: none;
+        margin: 0 0 0 20px;
+        border-radius: 6px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    label {
+         margin: 20px 0 20px 20px;
+     }
+     input {
+        margin: 5px 0 20px 10px ;
+        /* border-radius: 0 ;
+        border: 1px solid green; */
+        /* height: 20px; */
+       
+     }
+     h2{
+    font-size: 25px !important;
+ }
+    .logo {
+         margin:  0 0 0 350px;
+     }
+  </style>
+  </head>
+  <body>
+    <nav class="navigation" >
+      <div class="logo">
+        
+      <h2><img src="teamcyber.jpg" ></h2>
+      
+      </div>
+
+      <ul class="nav-links">
+        <!-- <li><a href="config.html" class="link1">Cisco Router</a></li>
+        <li><a href="hp.html" class="link2">HP Router</a></li> -->
+        <!-- <li><a href="ciscoswitch.html" class="link2">Cisco Switch</a></li>
+        <li><a href="hpswitch.html" class="link2">HP Switch</a></li> -->
+        <!--<input type="button" value="GET IN TOUCH " class="get">-->
+      </ul>
+
+      <div class="hamburger">
+        <div class="burger1"></div>
+        <div class="burger2"></div>
+
+        <div class="burger3"></div>
+      </div>
+    </nav>
+     <hr>
+    <center><h1>Configuration</h1></center>
+    <hr >
+    <center><form class="from">
+        <div class="container0">
+          <h2 class="trunk">Site Location</h2>
+          <label for="Location" class="inter">Location Name</label><input type="text" id="Location" placeholder="xyz">
+        </div></center>
+      <center><div class="container">
+       
+      <div class="container1">
+        <!-- <label for="Location" class="inter">Location Name</label><input type="text" id="Location" placeholder="xyz"><br> -->
+        <label for="vlan25">Ip of Vlan 25</label><input type="text" class="" id="vlan25" placeholder="x.x.x.x" />
+        <label for="subvlan25">Subnet</label><input type="text" class="" id="subvlan25" placeholder="y.y.y.y"/>
+        <label for="prefix1">prefix of Vlan 25</label><input type="text" class="" id="prefix1" placeholder="!/"/><br>
+      </div>
+        <div class="container2">
+        <label for="vlan15">Ip of Vlan 15</label><input type="text" class="" id="vlan15" placeholder="x.x.x.x"/>
+        <label for="subvlan15">Subnet</label><input type="text" class="" id="subvlan15" placeholder="y.y.y.y"/>
+        <label for="prefix2">prefix of Vlan 15</label><input type="text" class="" id="prefix2" placeholder="!/"/><br>
+      </div>
+        <div class="container3">
+        <label for="vlan35">Ip of Vlan 35</label><input type="text" class="" id="vlan35" placeholder="y.y.y.y"/>
+        <label for="subvlan35">Subnet</label><input type="text" class="" id="subvlan35" placeholder="x.x.x.x"/>
+        <label for="prefix3">prefix of Vlan 35</label><input type="text" class="" id="prefix3" placeholder="!/"/><br>
+
+          <input type="file" class="file" accept=".xlsx">
+      </div>
+        </div>
+        <input type="hidden"  id="myInput">
+        </div></center>
+        <button type="submit" class="btn">Generate File</button>
+      </form>
+        <div class="div"></div>
+       
+    
+
+    
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+  <script src="app.js"></script>
+</html>
